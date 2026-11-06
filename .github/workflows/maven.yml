@@ -9,10 +9,7 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+   workflow_dispatch:
 
 jobs:
   build:
@@ -30,7 +27,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: first pro  
-      run ls -l target/*.jar
+      run: ls -l target/*.jar
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
