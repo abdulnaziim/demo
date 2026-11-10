@@ -1,0 +1,16 @@
+
+
+name: Java CI with Maven
+
+on:
+   workflow_dispatch: 
+jobs:
+  test:
+
+    runs-on: self-hosted
+
+    steps:
+    - name: execute pwd
+      run: pwd
+    - name: show date
+      run: date
