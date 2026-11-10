@@ -2,8 +2,6 @@
 
 name: Java CI with Maven
 
-name: Maven Build Test and Deploy
-
 on:
   workflow_dispatch: 
 
